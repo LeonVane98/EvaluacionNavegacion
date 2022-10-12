@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OpMFragment">
+
+
+    <EditText
+        android:id="@+id/etNumMMM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero: "
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnCalcularMMM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etNumMMM"
+        android:layout_marginTop="25dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=">:3"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularMMM"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".VerificarMultiploFragment">
+
+    <EditText
+        android:id="@+id/etMultiplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numero: "
+        app:layout_constraintTop_toTopOf="parent"/>
+    <Button
+        android:id="@+id/btnVerifMultiplo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etMultiplo"
+        android:text="Verificar si es multiplo de 5"/>
+    <TextView
+        android:id="@+id/tvMultiplo5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btnVerifMultiplo"
+        android:text=">:3"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

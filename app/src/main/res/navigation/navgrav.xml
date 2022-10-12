@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgrav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.navleonidasvanegas.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/acnLoginMenu"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.navleonidasvanegas.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/acnMenuOP"
+            app:destination="@id/opMFragment" />
+        <action
+            android:id="@+id/acnMenuFactorial"
+            app:destination="@id/factorialFragment" />
+        <action
+            android:id="@+id/acnMenuMultiplo"
+            app:destination="@id/verificarMultiploFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/opMFragment"
+        android:name="com.example.navleonidasvanegas.OpMFragment"
+        android:label="fragment_op_m"
+        tools:layout="@layout/fragment_op_m" />
+    <fragment
+        android:id="@+id/factorialFragment"
+        android:name="com.example.navleonidasvanegas.factorialFragment"
+        android:label="fragment_factorial"
+        tools:layout="@layout/fragment_factorial" />
+    <fragment
+        android:id="@+id/verificarMultiploFragment"
+        android:name="com.example.navleonidasvanegas.VerificarMultiploFragment"
+        android:label="fragment_verificar_multiplo"
+        tools:layout="@layout/fragment_verificar_multiplo" />
+</navigation>
